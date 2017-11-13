@@ -7,7 +7,7 @@ from io import StringIO
 import os
 
 def serializeObject(pythonObj):
-    return pickle.dumps(pythonObj, pickle.HIGHEST_PROTOCOL)
+    return pickle.dumps(pythonObj, 3)
 
 def deserializeObject(pickledObj):
     return pickle.loads(pickledObj)
